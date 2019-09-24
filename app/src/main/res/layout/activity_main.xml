@@ -1,18 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="Click the buttons below to issue the notification:"
+        android:gravity="center_vertical|center_horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </TextView>
+
+    <Button
+        android:id="@+id/bnt_importance_max"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="Importance_max = 5"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white">
+    </Button>
+
+    <Button
+        android:id="@+id/bnt_importance_high"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="Importance_high = 4"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white">
+    </Button>
+
+    <Button
+        android:id="@+id/bnt_importance_default"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="Importance_default = 3"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textColor="@android:color/white">
+    </Button>
+
+    <Button
+        android:id="@+id/bnt_importance_low"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="Importance_low = 2"
+        android:backgroundTint="@android:color/holo_orange_light">
+    </Button>
+
+    <Button
+        android:id="@+id/bnt_importance_min"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="Importance_min = 1"
+        android:backgroundTint="@android:color/holo_green_light">
+    </Button>
+
+    <Button
+        android:id="@+id/bnt_importance_none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="Importance_min = 0"
+        android:backgroundTint="@android:color/white">
+    </Button>
+
+
+
+</LinearLayout>
